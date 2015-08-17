@@ -1,5 +1,5 @@
 expensiveproperties <- function(){
-    ## setwd("/Users/lwelsh/r/Coursera/GettingCleaning")
+    ## setwd("/Users/lwelsh/r/Coursera/Coursera-GettingCleaningData")
     if(!file.exists("data")){
         dir.create("data")
     }
