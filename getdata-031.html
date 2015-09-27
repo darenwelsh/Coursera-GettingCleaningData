@@ -1,0 +1,469 @@
+<!DOCTYPE html><html xmlns:fb="http://ogp.me/ns/fb#" itemtype="http://schema.org"><head><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE7"><meta name="fragment" content="!"><meta name="robots" content="NOODP"><meta charset="utf-8"><meta property="og:title" content="Coursera"><meta property="og:type" content="website"><meta property="og:image" content="http://s3.amazonaws.com/coursera/media/Coursera_Computer_Narrow.png"><meta property="og:url" content="https://www.coursera.org/"><meta property="og:site_name" content="Coursera"><meta property="og:locale" content="en_US"><meta property="og:description" content="Take free online classes from 80+ top universities and organizations. Coursera is a social entrepreneurship company partnering with Stanford University, Yale University, Princeton University and others around the world to offer courses online for anyone to take, for free. We believe in connecting people to a great education so that anyone around the world can learn without limits."><meta property="fb:admins" content="727836538,4807654"><meta property="fb:app_id" content="274998519252278"><meta name="twitter:site" content="Coursera"><meta name="twitter:app:name:iphone" content="Coursera"><meta name="twitter:app:name:ipad" content="Coursera"><meta name="twitter:app:name:googleplay" content="Coursera"><meta name="twitter:app:id:iphone" content="id736535961"><meta name="twitter:app:id:ipad" content="id736535961"><meta name="twitter:app:id:googleplay" content="org.coursera.android"><meta name="description" content="Take free online classes from 80+ top universities and organizations. Coursera is a social entrepreneurship company partnering with Stanford University, Yale University, Princeton University and others around the world to offer courses online for anyone to take, for free. We believe in connecting people to a great education so that anyone around the world can learn without limits."><meta name="image" content="http://s3.amazonaws.com/coursera/media/Coursera_Computer_Narrow.png"><meta name="apple-itunes-app" content="app-id=736535961"><title>Getting and Cleaning Data | Coursera</title>    <link href='https://dw0ugk4msqulk.cloudfront.net/05c46d8d8128b254b3450afb677188045a778ef0/css/spark.main.css' rel='stylesheet' type='text/css' >
+      <link href='https://www.coursera.org/maestro/api/course/975115/course.css' rel='stylesheet' type='text/css' >
+    <link href='https://spark-public.s3.amazonaws.com/getdata/static/images/favicon.ico' rel='icon' >
+</head><body><div id="fb-root"></div><div id="spark-help" class="hide"><div data-helpwidget data-helpwidget-link-help="http://support.coursera.org" data-helpwidget-link-discuss="http://class.coursera.org/mooc/" data-helpwidget-link-filter="coursera-admin-helpwidget-link" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false" class="helpwidget-tab">Admin Help</div></div><a href="https://learner.coursera.help/hc/requests/new" target="_blank"><div style="z-index: 1" data-networkprioritysupportwidget role="button" class="helpwidget-tab hide">Premium Support</div></a><div id="spark" class="hide">
+
+<a data-coursera-admin-helpwidget-link rel="help" href="https://class.coursera.org/mooc/help/messaging" title="Emails and Announcements" style="display:none;">Learn more</a>
+<a data-coursera-admin-helpwidget-link rel="help" href="https://class.coursera.org/mooc/help/manager/glossary/overview" title="Section Manager"  style="display:none;">Learn more</a>
+
+<div style="width:240px;float:right;" class="course-page-sidebar">
+    
+  <div style="width:100%;background-color:#f8f8f8;padding:15px;border:1px solid #d0d0d0;">
+
+    <h2 class="hidden">Reminders</h2>
+
+        
+                    <div id="coursera-calendar-help" class="modal" style="display:none;" data-modal-overlay-class="course-modal-overlay-dark">
+           <div class="modal-header"><h4>Course Calendar ICS</h4></div>
+           <div class="modal-body">
+            <div>
+                If you use a calendar that accepts .ics files (ex: google, ical), then import the URL below to see due dates for all quizzes and assignments <br/><br/>
+            </div>
+            <div class="input-prepend">
+             <span class="add-on"><span class="icon-calendar"></span></span>
+             <input type="text" style="width:450px;" value="https://class.coursera.org/getdata-031/api/course/calendar" readonly="readonly" onclick="this.select()" data-modal-focus/>
+            </div>
+           </div>
+        </div>
+        
+                    <h4>
+                                <a href="https://class.coursera.org/getdata-031/api/course/calendar" data-modal="#coursera-calendar-help" data-tooltip="You can always access the Calendar here">
+                    <span class="icon-calendar"></span>
+                </a>
+                                Upcoming Deadlines            </h4>
+
+            
+       
+
+            
+       
+
+            
+       
+
+            
+       
+
+            
+       
+
+            <!-- DEADLINES FOOTER -->        
+        
+
+    
+        <hr>
+    
+       
+
+    
+        <h4>Recent Discussions</h4>
+    <div data-coursera-forum-mini-threads-widget>
+        Loading threads...
+    </div>
+    <a href="https://class.coursera.org/getdata-031/forum/index">Browse all discussions &raquo;</a>
+    
+  </div>
+
+  
+</div>
+
+
+    
+
+
+<div style="padding-right:280px">
+    
+    <h2 class="course-page-header">Announcements</h2>
+    <!-- ANNOUNCEMENTS PREAMBLE -->    
+                        <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Getting and Cleaning Data: Post-Course Survey</h3>
+                                        <div dir="auto"><p class="p1" style="color:rgb(51,51,51);">Now that final grades, statements of accomplishment, and verified certificates have been issued, we have one more request. We are interested in gathering feedback about this course and the Data Science Specialization in general so that we can make improvements and learn more about the overall course experience. </p><p class="p1" style="color:rgb(51,51,51);">Please take a few moments to help us out by completing our post-course survey. It should take no more than about 5 minutes.</p><p class="p2" style="color:rgb(51,51,51);"><span class="s1">Click here to launch the survey: <a href="https://www.surveymonkey.com/s/B895N9K?user_id=8b080297cd27a5ef27569c833885da068a769655" title="null" style="color:rgb(3,103,176);text-decoration:none;">https://www.surveymonkey.com/s/B895N9K?user_id=8b080297cd27a5ef27569c833885da068a769655</a></span></p><p class="p1" style="color:rgb(51,51,51);">Finally, please note that access to the course site will end in five days. </p><p class="p1" style="color:rgb(51,51,51);">Thanks,</p><p class="p1" style="color:rgb(51,51,51);">The Data Science Team</p></div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Fri  4 Sep 2015 12:46 PM CDT</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Getting and Cleaning Data Course Wrap-Up</h3>
+                                        <div dir="auto">Congratulations on finishing Getting and Cleaning Data!
+<br /><br />We will set the grading and release the Verified Certificates for the course. <span style="font-size:14.4444446563721px;">It might take as long as two weeks</span><span style="font-size:14.4444446563721px;"> for Coursera to verify </span><span style="font-size:14.4444446563721px;">and issue</span><span style="font-size:14.4444446563721px;"> certificates</span><span style="font-size:14.4444446563721px;">. </span><br /><br />A couple of other notes:
+<br /><br />* The course will begin again immediately starting in a couple of
+<br />days. If you are still interested in keeping in touch with your
+<br />fellow learners, please enroll in the new course and keep the conversation going. You may also be an invaluable resource for 
+<br />new course takers!
+<br />* Keep your eye on Hopkins offerings from Coursera. All announcements about future offerings will be posted at: <a href="https://twitter.com/jhubiostat">https://twitter.com/jhubiostat</a> and <a href="http://simplystatistics.org/">http://simplystatistics.org/</a>, <a href="http://twitter.com/simplystats">http://twitter.com/simplystats</a>. 
+<br />* If you liked this course, please consider taking some of the other course offerings through the Data Science Track. Now that you have the ability to collect and clean data, you are perfectly prepared to step into the real fun part of data science - answering questions with all the data you now have access to!
+<br />* If you have cool projects you created through the course, please
+<br />Tweet them to either of the addresses above so we can see them!
+<br /><br />Thanks again for all of your efforts during the course of the class and best of luck in your career!
+<br /><br />Jeff Leek and the Data Science Track Team
+<br /></div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Sun 30 Aug 2015  7:01 PM CDT</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Getting &amp; Cleaning Data Course Project Evaluations Due Sunday</h3>
+                                        <div dir="auto">Don't forget that Course Project evaluations are due BEFORE 11:30 PM UTC on Sunday. You must evaluate at least four of your classmates' Course Project submissions. If you do not complete the required submissions, your own Course Project grade will be reduced by 20%. <br /><br />Please allow yourself enough time to thoughtfully complete the evaluations. <br /><br />All the best,<br />Jeff and the Data Science Team</div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Wed 26 Aug 2015  7:01 PM CDT</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Week 4 of Getting and Cleaning Data: Merging and Organizing Data</h3>
+                                        <div dir="auto">Welcome to Week 4 of Getting and Cleaning Data! This week we finish up with lectures on text and date manipulation in R. In this final week we will also focus on peer grading of Course Projects. 
+<br /><br />Participating in peer grading is an amazing learning opportunity. It gives you a chance to learn things from your fellow students, pick up tips for explaning key ideas, and helping others to learn as well. We have focused our effort on making the rubric as objective and straightforward to implement as possible. If you have any issues please report them in the forums as described in the syllabus. 
+<br /><br />You must evaluate and grade at least four of your classmates' Course Project submissions. If you don't grade at least four, your own Course Project grade will be reduced by 20%. To access the evaluation phase, return to the same interface that you used during the Course Project submission phase.<br /><br />Finally, make sure that you submit Quiz 4 BEFORE the 11:30 PM Sunday deadline. There is no grace period for Quiz 4, so you must submit BEFORE the deadline to receive credit.<br /><br />Thanks again for all of your efforts in the course, we are in the last stretch. Good luck and have a great week!
+<br /><br />Jeff Leek and the Data Science Track Team</div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Sun 23 Aug 2015  7:01 PM CDT</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Getting &amp; Cleaning Data Course Project Deadline Approaching</h3>
+                                        <div dir="auto">This is a reminder that your Course Project is due BEFORE 11:30 PM UTC on Sunday. Late Days may not be applied to assignments graded by peer assessment, so you must get your work in before the deadline to receive credit and participate in the evaluation phase.<br /><br />Click the Course Project link in the left navigation bar to access the Course Project instructions and the submission interface.<br /><br />All the best,<br />Jeff and the Data Science Team</div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Wed 19 Aug 2015  7:01 PM CDT</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Week 3 of Getting and Cleaning Data: Merging and Organizing Data</h3>
+                                        <div dir="auto">Welcome to Week 3 of Getting and Cleaning Data! This week the lectures will focus on organizing, merging and managing the data you have collected using the lectures from Weeks 1 and 2. <br /><br />Remember that your Course Project is due BEFORE 11:30 PM UTC on Sunday. Click the Course Project link in the left navigation bar to access instructions and the submission interface. Next week, we will be evaluating and grading one another's submissions, so make sure you turn in your project on time. You may not use Late Days for the Course Project.<br /><br />If you have trouble or want to explore issues in more depth, please seek out answers on the message boards. They are a great resource! If you happen to be a superstar who already gets it, please take the time to help your classmates by answering their questions as well. This is one of the best ways to practice using and explaining your skills to others. These are two of the key characteristics of excellent data scientists.
+<br /><br />Good luck and have a great week!
+<br /><br />Jeff Leek and the Data Science Track Team
+<br /></div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Sun 16 Aug 2015  7:01 PM CDT</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Week 2 of Getting and Cleaning Data: Extracting Data From Databases and the Web</h3>
+                                        <div dir="auto">Welcome to Week 2 of Getting and Cleaning Data!  The primary goal is to introduce you to the most common data storage systems and the appropriate tools to extract data from web or from databases like MySQL. 
+<br /><br />Remember that the Course Project is open and ongoing. It is due BEFORE 11:30 PM UTC on the Sunday at the end of Week 3, but please don't put it off until the last minute. To access Course Project instructions and submission interface, click the Course Project link in the left navigation bar.  <br /><br />With the skills you learn this week you should be able to start on the basic data extraction that will form the beginnings of your project. 
+<br /><br />Good luck and have a great week!
+<br /><br />Jeff Leek and the Data Science Track Team</div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Sun  9 Aug 2015  7:01 PM CDT</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Data Science Specialization Community Site</h3>
+                                        <div dir="auto"><p class="p1">Since the beginning of the Data Science Specialization, we've noticed the unbelievable passion students have about our courses and the generosity they show toward each other on the course forums. A couple students have created quality content around the subjects we discuss, and many of these materials are so good we feel that they should be shared with all of our students.</p><p class="p1">We're excited to announce that we've created a site using GitHub Pages: <a href="http://datasciencespecialization.github.io/"><span class="s1">http://datasciencespecialization.github.io/</span></a> to serve as a directory for content that the community has created. If you've created materials relating to any of the courses in the Data Science Specialization, please send us a pull request so we can add a link to your content on our site. You can find out more about contributing here: <a href="https://github.com/DataScienceSpecialization/DataScienceSpecialization.github.io#contributing"><span class="s1">https://github.com/DataScienceSpecialization/DataScienceSpecialization.github.io#contributing</span></a></p><p class="p2">We can't wait to see what you've created and where the community can take this site!<br /></p><p class="p2">- The JHU Data Science Lab Team</p></div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Wed  5 Aug 2015  3:30 PM CDT</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Welcome to swirl!</h3>
+                                        <div dir="auto">In this course, you have the option to use the <a href="http://swirlstats.com/" target="_blank" title="Link: http://swirlstats.com">swirl R package</a> to practice and extend the material covered in lectures. swirl teaches you R programming and data science interactively, at your own pace, and right in the R console.<br /><br />Each lesson that you complete in swirl is worth one extra credit point. However, the <strong>maximum number of points you may earn for the assignment is capped at 3</strong>. While these lessons will give you valuable practice and you are encouraged to complete as many as possible, please note that they are <strong>completely optional</strong> and you can get full marks in the class without completing them.<br /><br />You can find the instructions for how to install and use swirl in the Programming Assignments section of the course under <em>Week 1</em>. Have fun!<br /><br />Jeff Leek and the Data Science Team</div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Mon  3 Aug 2015 11:01 AM CDT</div>
+                                    </div>
+            </div>
+                    <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Certificate Updates for Getting and Cleaning Data</h3>
+                                        <div dir="auto"><div style="color:rgb(34,34,34);font-family:arial, sans-serif;font-size:12.8000001907349px;line-height:normal;"><p class="MsoNormal" style="margin:0in 0in .0001pt;font-size:12pt;font-family:'Times New Roman', serif;"><span style="font-size:11pt;font-family:Arial, sans-serif;">Welcome to the course!</span><u></u><u></u></p></div><p class="MsoNormal" style="margin:0in 0in .0001pt;font-size:12pt;font-family:'Times New Roman', serif;color:rgb(34,34,34);line-height:normal;"><u></u> <u></u></p><div style="color:rgb(34,34,34);font-family:arial, sans-serif;font-size:12.8000001907349px;line-height:normal;"><p class="MsoNormal" style="margin:0in 0in .0001pt;font-size:12pt;font-family:'Times New Roman', serif;"><span style="font-size:11pt;font-family:Arial, sans-serif;">We’re excited you’re here, and that you’re ready to explore the world of data science. Before you get started, we have a quick update on certificates for this course. This course will offer a Course Certificate to learners who successfully pass the course, pay the registration fee, and verify their work.</span><u></u><u></u></p></div><p class="MsoNormal" style="margin:0in 0in .0001pt;font-size:12pt;font-family:'Times New Roman', serif;color:rgb(34,34,34);line-height:normal;"><u></u> <u></u></p><div style="color:rgb(34,34,34);font-family:arial, sans-serif;font-size:12.8000001907349px;line-height:normal;"><p class="MsoNormal" style="margin:0in 0in .0001pt;font-size:12pt;font-family:'Times New Roman', serif;"><span style="font-size:11pt;font-family:Arial, sans-serif;">You can still participate in the complete course if you do not wish to pay for the Course Certificate option or verify your work. Please note, however, that while your final score will be noted on your course records page, this course will not offer a Statement of Accomplishment.</span><u></u><u></u></p></div><p class="MsoNormal" style="margin:0in 0in .0001pt;font-size:12pt;font-family:'Times New Roman', serif;color:rgb(34,34,34);line-height:normal;"><u></u> <u></u></p><div style="color:rgb(34,34,34);font-family:arial, sans-serif;font-size:12.8000001907349px;line-height:normal;"><p class="MsoNormal" style="margin:0in 0in .0001pt;font-size:12pt;font-family:'Times New Roman', serif;"><span style="font-size:11pt;font-family:Arial, sans-serif;">Coursera remains committed to making our content and certificates accessible to all learners. If you’d like to earn a Course Certificate but cannot afford the registration fee, please submit an application to our </span><a href="https://learner.coursera.help/hc/en-us/articles/201523175-Financial-Aid" target="_blank" style="color:rgb(17,85,204);"><span style="font-size:11pt;font-family:Arial, sans-serif;">financial aid</span></a><span style="font-size:11pt;font-family:Arial, sans-serif;"> program.</span></p></div></div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Mon  3 Aug 2015 11:01 AM CDT</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Getting and Cleaning Data: Pre-Course Survey</h3>
+                                        <div dir="auto">Thanks for signing up for <em>Getting and Cleaning Data</em>. As you probably know, this course is part of the <em>Data Science Specialization</em>, a sequence of nine massive open online courses (MOOCs) plus a Capstone project. We would like to learn more about your motives for taking this course and your intentions for both this course and the overall specialization. To that end, please complete our short pre-course survey. It should only take about 3 minutes of your time.<br /><br />Click here to launch the survey: <code><a href="https://www.surveymonkey.com/s/W38JPX2?user_id=8b080297cd27a5ef27569c833885da068a769655" target="_blank" title="Link: https://www.surveymonkey.com/s/W38JPX2?user_id=8b080297cd27a5ef27569c833885da068a769655">https://www.surveymonkey.com/s/W38JPX2?user_id=</a><span class="s2"><a href="https://www.surveymonkey.com/s/W38JPX2?user_id=8b080297cd27a5ef27569c833885da068a769655" target="_blank" title="Link: https://www.surveymonkey.com/s/W38JPX2?user_id=8b080297cd27a5ef27569c833885da068a769655">8b080297cd27a5ef27569c833885da068a769655</a></span><br /></code><br />Thanks,<br />The Data Science Team</div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Mon  3 Aug 2015 10:20 AM CDT</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Welcome to Getting and Cleaning Data!</h3>
+                                        <div dir="auto">Welcome to Week 1 of Getting and Cleaning Data! This course will focus on preparing you for collecting and cleaning data for downstream analysis and sharing. 
+<br /><br />One of the major components of a data scientist's job is to collect and clean data. Whether at a small organization or a major enterprise, the first step in using data is getting, cleaning and understanding the data. In this course we will focus on R packages and a few outside tools that can be used to collect data from a variety of sources, from Excel files to databases like MySQL. We will also cover a variety of formats including JSON, XML, and flat files (.csv, .txt).
+<br /><br />The emphasis of this course is on creating tidy data sets that can be used in downstream analyses. Once you have mastered the material in this course you will be ready to learn about the techniques for exploring, analyzing, and summarizing data offered through our courses track or other Statistics, Data Science, or Machine Learning MOOCs. 
+<br /><br />One important note is that as part of this class you will be required to use the <a href="https://github.com" target="_blank">Github account</a> you set up in The Data Scientist's Toolbox. Github is a tool for collaborative code sharing and editing. During this course and other courses in the track you will be submitting links to files you publicly place in your Github account as part of peer evaluation. If you are concerned about preserving your anonymity you should set up an anonymous Github account and be careful not to include any information you do not want made available to peer evaluators.<br /><br />The recommended background for this course are the courses <a href="https://www.coursera.org/course/datascitoolbox" target="_blank" title="Link: https://www.coursera.org/course/datascitoolbox">The Data Scientist's Toolbox</a> and <a href="https://www.coursera.org/course/rprog" target="_blank" title="Link: https://www.coursera.org/course/rprog">R programming</a>. It will be challenging to take this class concurrently with those classes. You may have to read ahead in previous classes to get the relevant background for this class. The good news is that we will offer all courses every month, so if you don't feel ready to take on Getting and Cleaning Data this month it will start again next month! For a complete set of course dependencies in the Data Science Specialization please see the <a href="https://d396qusza40orc.cloudfront.net/rprog/doc/JHDSS_CourseDependencies.pdf" target="_blank" title="Link: https://d396qusza40orc.cloudfront.net/rprog/doc/JHDSS_CourseDependencies.pdf">course dependency chart</a>.<br /><br />Please see the course syllabus for information about the Quizzes, the Course Project, due dates, and grading. Don't forget to say hi on the message boards. The community developed around these courses is one of the best places to learn and the best things about taking a MOOC!
+<br /><br />Jeff Leek and the Data Science Track Team</div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Mon  3 Aug 2015  8:01 AM CDT</div>
+                                    </div>
+            </div>
+            </div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  
+  styleSheets: [],
+  styles: {},
+
+  jax: ["input/TeX"],
+  
+  extensions: ["tex2jax.js"],
+
+  preJax: null,
+  postJax: null,
+
+  preRemoveClass: "MathJax_Preview",
+
+  showProcessingMessages: true,
+
+  messageStyle: "none",
+  
+  displayAlign: "center",
+  displayIndent: "0em",
+  
+  delayStartupUntil: "none",
+
+  skipStartupTypeset: false,
+  
+  elements: [],
+  
+  tex2jax: {
+	    inlineMath: [
+	                 ['$$','$$'],      // uncomment this for standard TeX math delimiters
+	                 ['\\(','\\)']
+	                 ],
+
+	                 displayMath: [
+	                 ['\\[','\\]']
+	                 ],
+
+    skipTags: ["script","noscript","style","textarea","pre","code"],
+    ignoreClass: "tex2jax_ignore",
+    processClass: "tex2jax_process",
+    processEscapes: false,
+    processEnvironments: true,
+    preview: "TeX"
+    
+  },
+  
+  mml2jax: {
+    preview: "alttext"
+    
+  },
+  
+  jsMath2jax: {
+    preview: "TeX"
+    
+  },
+
+  TeX: {
+    TagSide: "right",
+    TagIndent: ".8em",
+    MultLineWidth: "85%",
+    Macros: {},
+
+    extensions: ["AMSmath.js", "AMSsymbols.js"]
+    
+  },
+
+  //============================================================================
+  //
+  //  These parameters control the MathML inupt jax.
+  //
+  MathML: {
+    //
+    //  This specifies whether to use TeX spacing or MathML spacing when the
+    //  HTML-CSS output jax is used.
+    //
+    useMathMLspacing: false
+  },
+  
+  //============================================================================
+  //
+  //  These parameters control the HTML-CSS output jax.
+  //
+  "HTML-CSS": {
+    
+    scale: 100,
+    
+    availableFonts: ["STIX","TeX"],
+    
+    preferredFont: "TeX",
+    
+    webFont: "TeX",
+    
+    imageFont: "TeX",
+    
+    undefinedFamily: "STIXGeneral,'Arial Unicode MS',serif",
+      
+    showMathMenu: true,
+
+    styles: {},
+    
+    tooltip: {
+      delayPost: 600,          // milliseconds delay before tooltip is posted after mouseover
+      delayClear: 600,         // milliseconds delay before tooltip is cleared after mouseout
+      offsetX: 10, offsetY: 5  // pixels to offset tooltip from mouse position
+    }
+  },
+  
+  //============================================================================
+  //
+  //  These parameters control the NativeMML output jax.
+  //
+  NativeMML: {
+
+    scale: 100,
+
+    showMathMenu: true,
+    showMathMenuMSIE: true,
+
+    styles: {}
+  },
+  
+  MathMenu: {
+    delay: 400,
+    
+    helpURL: "http://www.mathjax.org/help/user/",
+
+    showRenderer: true,
+    showFontMenu: false,
+    showContext:  false,
+
+    windowSettings: {
+      status: "no", toolbar: "no", locationbar: "no", menubar: "no",
+      directories: "no", personalbar: "no", resizable: "yes", scrollbars: "yes",
+      width: 100, height: 50
+    },
+    
+    styles: {}
+    
+  },
+
+  MMLorHTML: {
+    prefer: {
+      MSIE:    "MML",
+      Firefox: "HTML",
+      Opera:   "HTML",
+      other:   "HTML"
+    }
+  }
+});
+</script>
+<script type="text/javascript">
+(function () {
+
+  function loadMathJax() {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://duqnjvq4jwr55.cloudfront.net/2.1/MathJax.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  }
+
+  window.loadOrRefreshMathJax = function(domId) {
+    if (window.MathJax) {
+      if (domId) {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, domId]);
+      } else {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+      }
+    } else {
+      loadMathJax();
+    }
+  }
+})();
+</script></div><!-- - track IE8 and less browser for eventing purposes--><!--[if lte IE 8]><script>window._204 = window._204 || [];
+window._gaq = window._gaq || [];
+window._gaq.push(
+    ['_setAccount', 'UA-28377374-1'],
+    ['_setDomainName', window.location.hostname],
+    ['_setAllowLinker', true],
+    ['_trackPageview', window.location.pathname]);
+window._204.push(
+  ['client', 'home'],
+  {key:"pageview", value:window.location.pathname});</script><script src="https://dw0ugk4msqulk.cloudfront.net/05c46d8d8128b254b3450afb677188045a778ef0/js/lib/204.js"></script><script src="https://ssl.google-analytics.com/ga.js"></script><![endif]--><div id="fb-root"></div><div id="origami" data-js="origami"><div style="position:absolute;top:0px;left:0px;width:100%;height:100%;background:#f5f5f5;padding-top:5%;"><div id="coursera-loading-nojs" style="text-align:center; margin-bottom:10px;display:none;"><div>Please use a <a href="https://learner.coursera.help/hc/articles/201522945-Recommended-Software-and-Devices">modern browser </a> with JavaScript enabled to use Coursera.</div><div id="get-browser-zh" style="display:none;">请下载现代的浏览器（<a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie">IE11</a>或<a href="https://www.google.com/intl/zh-CN/chrome/browser/">Google Chrome</a>）来使用Coursera。</div></div><div><span id="coursera-loading-js" style="display: none; padding-left:45%; font-size: 14px; line-height: 1.428571429; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">loading &nbsp;&nbsp;<img src="https://dw0ugk4msqulk.cloudfront.net/images/icons/loading.gif"></span></div><noscript><div style="text-align:center; margin-bottom:10px;">Please use a <a href="https://learner.coursera.help/hc/articles/201522945-Recommended-Software-and-Devices">modern browser </a> with JavaScript enabled to use Coursera.</div></noscript></div></div><!--[if gte IE 9]><script>document.getElementById("coursera-loading-js").style.display = 'block';</script><![endif]-->
+<!--[if lte IE 8]><script>document.getElementById("coursera-loading-nojs").style.display = 'block';</script><![endif]-->
+<!--[if !IE]> --><script>document.getElementById("coursera-loading-js").style.display = 'block';</script><!-- <![endif]--><script>if (/zh/i.test(window.localStorage ? localStorage.getItem('locale') : '') || '{{ locale }}') {
+  document.getElementById('get-browser-zh').style.display = 'block';
+}</script><!--[if !IE]> --><script>document.getElementById('coursera-loading-js').style.display = 'block';</script><!-- <![endif]-->
+    <script src='https://dw0ugk4msqulk.cloudfront.net/05c46d8d8128b254b3450afb677188045a778ef0/js/vendor/jquery.v1-7.js' ></script>
+      <script src='https://dw0ugk4msqulk.cloudfront.net/05c46d8d8128b254b3450afb677188045a778ef0/spark/core/js/loadOrRefreshMathJax.js' ></script>
+  <script src="https://dw0ugk4msqulk.cloudfront.net/05c46d8d8128b254b3450afb677188045a778ef0/js/vendor/require.v2-1-1.js"></script><script data-baseurl="https://dw0ugk4msqulk.cloudfront.net/05c46d8d8128b254b3450afb677188045a778ef0/" data-version="05c46d8d8128b254b3450afb677188045a778ef0" data-timestamp='1443056773867' data-debug='0' data-locale="en_US" id="_require">if(document.getElementById('coursera-loading-js').style.display == 'block') {
+  (function(el) {
+     require.config({
+       //enforceDefine: true,
+       waitSeconds: 75,
+       baseUrl: el.getAttribute('data-baseurl'),
+       urlArgs: el.getAttribute('data-debug') == '1' ? 'v=' + el.getAttribute('data-timestamp') : '',
+       shim: {
+          'underscore': {
+             exports: '_'
+          },
+          'backbone': {
+             deps: ['underscore', 'jquery'],
+             exports: 'Backbone',
+             init: function(_, $) {
+               Backbone.$ = $;
+               return Backbone;
+             }
+          },
+          'pages/hg/thirdparty/js/backbone.marionette': {
+            deps: ['backbone']
+          },
+          'pages/hg/thirdparty/js/webshims/polyfiller': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/webshims/extras/mousepress': {
+            deps: ['jquery', 'pages/hg/thirdparty/js/webshims/polyfiller']
+          },
+          'pages/hg/thirdparty/js/jquery.throttle': {
+            deps: ['jquery']
+          },
+          'js/lib/jquery.linkify': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/js/bootstrap/alert': {
+            deps: ['jquery', 'pages/hg/thirdparty/js/bootstrap/transition']
+          },
+          'spark/core/js/jquery_ui': {
+            deps: ['jquery']
+          },
+          'spark/core/js/jquery.history': {
+            deps: ['jquery']
+          },
+          'js/lib/bootstrap.tooltip': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/bootstrap/transition': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/bootstrap/tab': {
+            deps: ['jquery']
+          },
+          'bundles/videojs/lib/video.4.3.0': {
+            exports: 'vjs'
+          }
+       },
+       paths: {
+          'q': 'js/vendor/q.v1-0-1',
+          'react-with-addons': 'js/vendor/react-with-addons.v0-12',
+          'jquery':                         'pages/spark/jquery',
+          'underscore':                     'js/vendor/underscore.v1-5-2',
+          'backbone':                       'js/vendor/backbone.v1-1-0',
+          'backbone.relational':            'js/lib/backbone.relational.0.8.6',
+          'i18n':                           'js/lib/i18n._t',
+          'css':                            'js/vendor/require.css.v0-1-2',
+          'memoize':                        'js/lib/require.memoize.v0-0-1',
+          'pages/spark/models/user.json':   'empty:',
+          'pages/spark/models/course.json': 'empty:',
+          'pages/spark/models/navbar.json': 'empty:'
+       },
+       callback: function() {
+                    require(['pages/spark/routes']);
+                },
+       config: {
+         i18n: {
+           locale: (window.localStorage ? localStorage.getItem('locale') : '') || el.getAttribute('data-locale')
+         }
+       }
+     });
+  })(document.getElementById('_require'));
+}
+</script><script>define('pages/spark/models/user.json', [], function(){
+      return JSON.parse("{\"id\":11376213,\"email_address\":\"darenwelsh@gmail.com\",\"full_name\":\"Daren Welsh\",\"locale\":\"en_US\",\"timezone\":\"America\\\/Chicago\",\"access_group_id\":\"4\",\"registration_time\":\"1437745930\",\"last_access_time\":\"1443204190\",\"last_access_ip\":\"168.235.162.186\",\"signature_track_register_time\":\"0\",\"email_announcement\":\"1\",\"email_forum\":\"1\",\"in_signature_track\":\"0\",\"wishes_proctored_exam\":\"0\",\"first_name\":\"Daren\",\"permissions\":[\"default\",\"allow_site_access\"],\"group\":\"Student\",\"anonymous\":false,\"forum_title\":\"Student\",\"signature_track_state\":1,\"verified_quizzes\":[],\"submitted_quizzes\":[\"25\",\"43\",\"55\",\"69\"],\"scheduled_proctored_exam\":null,\"last_chance_modal\":1,\"flexjoin_last_chance_modal\":null}");
+  });
+define('pages/spark/models/course.json', [], function(){
+      return JSON.parse("{\"id\":975115,\"isPrivate\":false,\"type\":\"public\",\"name\":\"Getting and Cleaning Data\",\"instructor\":\"Jeff Leek, PhD, Roger D. Peng, PhD, Brian Caffo, PhD\",\"sessionName\":\"getdata-031\",\"externalBaseURL\":\"https:\\\/\\\/www.coursera.org\\\/\",\"shortname\":\"getdata\",\"host\":\"https:\\\/\\\/www.coursera.org\\\/\",\"assetUnversionedLink\":\"https:\\\/\\\/dw0ugk4msqulk.cloudfront.net\\\/\",\"cheggID\":\"\",\"hasLTI\":true,\"badgevilleDomain\":\"\",\"linkable\":false,\"universityShortname\":\"jhu\",\"signatureTrackStatus\":{\"signature_track_enabled\":1},\"courseURLs\":{\"log_in_link\":\"https:\\\/\\\/www.coursera.org\\\/login?post_redirect=https%3A%2F%2Fwww.coursera.org%2Flogin%3Fuser_action%3Dclass%26course_id%3D975115%26post_redirect%3Dhttps%253A%252F%252Fclass.coursera.org%252Fgetdata-031%252Fauth%252Fauth_redirector%253Ftype%253Dlogin%2526subtype%253Dnormal%2526visiting%253D\",\"sign_up_link\":\"https:\\\/\\\/www.coursera.org\\\/signup?enroll_cid=975115&enroll_sn=getdata&enroll_n=Getting and Cleaning Data\",\"view_course_info_link\":\"https:\\\/\\\/www.coursera.org\\\/course\\\/getdata\",\"sign_up_link_cant_enroll\":\"https:\\\/\\\/www.coursera.org\\\/signup?post_redirect=https%3A%2F%2Fwww.coursera.org%2Fcourse%2Fgetdata\"},\"courseBase\":\"https:\\\/\\\/class.coursera.org\\\/getdata-031\\\/\",\"search\":true,\"hideWiki\":true,\"aceStartRegistrationDate\":\"Wed 31 Dec 1969  6:00 PM CST\",\"aceEndRegistrationDate\":\"Wed 31 Dec 1969  6:00 PM CST\",\"aceExamStartDate\":\"Wed 31 Dec 1969  6:00 PM CST\",\"aceExamEndDate\":\"Wed 31 Dec 1969  6:00 PM CST\",\"aceExamRules\":\"\",\"aceExamDuration\":\"\",\"aceBeforeExam\":false,\"aceAfterExam\":true,\"aceHours\":null,\"aceCreditType\":\"\",\"acePrice\":null,\"aceExamID\":null,\"aceEligible\":false,\"canRegisterForACE\":false,\"specialization\":{\"numCourse\":9,\"image\":\"https:\\\/\\\/s3.amazonaws.com\\\/coursera\\\/specializations\\\/jhudatascience\\\/logo_small.png\",\"id\":1,\"short_name\":\"jhudatascience\",\"name\":\"Data Science\"},\"supportForums\":true,\"textbooks\":\"\",\"inVideoQuizV2\":false,\"in_flexjoin\":0,\"honorCodeExtraText\":\"\",\"honorCodeCustomTitle\":\"\",\"honorCodeCustomButton\":\"\",\"studentAccessDisabled\":0,\"disableQQs\":false}");
+  });
+  define('pages/spark/models/navbar.json', [], function(){
+      return JSON.parse("{\"items\":[{\"name\":\"\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"\"},{\"name\":\"Course\",\"icon\":\"\",\"link_type\":\"heading\",\"link_data\":\"\"},{\"name\":\"Announcements\",\"icon\":\"home\",\"link_type\":\"circuit\",\"link_data\":\"class:index\"},{\"name\":\"Video Lectures\",\"icon\":\"lecture\",\"link_type\":\"circuit\",\"link_data\":\"lecture:index\"},{\"name\":\"Exercises\",\"icon\":\"\",\"link_type\":\"heading\",\"link_data\":\"\"},{\"name\":\"Quizzes\",\"icon\":\"quiz\",\"link_type\":\"circuit\",\"link_data\":\"quiz:index\"},{\"name\":\"swirl Programming Assignment\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"assignment:index\"},{\"name\":\"Course Project\",\"icon\":\"assignment\",\"link_type\":\"circuit\",\"link_data\":\"human_grading:index\"},{\"name\":\"\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"\"},{\"name\":\"About the course\",\"icon\":\"\",\"link_type\":\"heading\",\"link_data\":\"\"},{\"name\":\"Syllabus\",\"icon\":\"wiki\",\"link_type\":\"wiki\",\"link_data\":\"syllabus\"},{\"name\":\"About the instructor\",\"icon\":\"\",\"link_type\":\"wiki\",\"link_data\":\"About_the_Instructor\"},{\"name\":\"\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"\"},{\"name\":\"Community\",\"icon\":\"\",\"link_type\":\"heading\",\"link_data\":\"\"},{\"name\":\"Discussion Forums\",\"icon\":\"forum\",\"link_type\":\"circuit\",\"link_data\":\"forum:index\"},{\"name\":\"DSS Community Site\",\"icon\":\"\",\"link_type\":\"window_link\",\"link_data\":\"http:\\\/\\\/datasciencespecialization.github.io\\\/\"}]}");
+  });
+</script><script>var coursera_enable_new_help_center = true;
+</script></body></html>
